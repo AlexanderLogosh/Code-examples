@@ -1,0 +1,98 @@
+.scheduler {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .scheduler__header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .developers-header {
+    width: 215px;
+    margin-right: 12px;
+    padding: 20px 10px;
+    background: #E9EAEE;
+    border-radius: 15px 15px 0 0;
+
+    h2 {
+      margin-bottom: 0;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #5E5E5E;
+    }
+
+    .ant-btn,
+    .ant-input-search {
+      width: 100%;
+    }
+  }
+
+  .projects-header {
+    width: calc(100% - 227px);
+
+    h2 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      color: #5E5E5E;
+    }
+
+    .ant-input-search {
+      width: 230px;
+    }
+
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 26px;
+      padding-top: 26px;
+      border-top: 1px solid #E9EAEE;
+    }
+  }
+
+  .scheduler__body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #E9EAEE;
+
+    .ant-table-body table {
+      position: relative;
+
+      .ant-table-cell-fix-right {
+        padding: 0;
+      }
+
+      td {
+        position: relative;
+        z-index: 1;
+        overflow: visible;
+      }
+    }
+
+    .scheduler__grey-column {
+      border-top-color: #E9EAEE !important;
+      background-color: #E9EAEE !important;
+    }
+
+    thead {
+      th {
+        background-color: #fff;
+
+        &:last-child {
+          text-align: center;
+        }
+      }
+    }
+
+    .ant-table-cell {
+      padding: 0;
+      box-sizing: border-box;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.project-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: #9b9b9b;
+  border-bottom: 1px solid white;
+  color: white;
+  cursor: pointer;
+
+  &__info {
+    position: sticky;
+    left: 215px;
+    z-index: 2;
+    display: inline-block;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 5px;
+    border-radius: 6px;
+  }
+
+  &__type {
+    margin-right: 5px;
+  }
+
+  &__payment-day {
+    position: absolute;
+    top: 6px;
+    padding: 3px 4px 3px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FF6766;
+    border-radius: 30px;
+  }
+}
+
+.project-line.start {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.project-line.finish {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
